@@ -150,11 +150,11 @@
                     <div class="nftPanel">
                         <h2 class="names">{{item.name}}</h2>
                         <p class="infos">{{item.info}}</p>
-                        <p class="prices">    初始售价    {{item.cost}} IGC</p>
-                        <p class="prices">    当前售价    {{item.price}} IGC</p>
-                        <p class="prices">    预估收益    {{item.income}} IGC</p>
-                        <p class="prices">    奖池余额    {{item.reward}} IGC</p>
-                        <p class="prices">    当前轮次    {{item.rounds}}</p>
+                        &nbsp;<p class="prices">    初始售价    {{item.cost}} IGC</p>
+                        &nbsp;<p class="prices">    当前售价    {{item.price}} IGC</p>
+                        &nbsp;<p class="prices">    预估收益    {{item.income}} IGC</p>
+                        &nbsp;<p class="prices">    奖池余额    {{item.reward}} IGC</p>
+                        &nbsp;<p class="prices">    当前轮次    {{item.rounds}}</p>
                         <p class="hoders">当前权益持有者： <span>{{item.holder}}</span></p>
                         <p class="hoders">宝石即将归属者： <span>{{item.winner}}</span></p>
                         <el-button class="btn" @click="toDoing(item,index)">{{ item.isApproved?'立即抢购':'授权' }}</el-button>
