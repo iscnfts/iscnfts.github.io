@@ -526,6 +526,15 @@
         }
       })
 
+      $(function() {
+    var url = window.location.toString();
+    var id = url.split('#')[1];
+    if (id) {
+        var t = $('#' + id).offset().top;
+        $(window).scrollTop(t);
+    }
+})
+
     //   (function px2rem(doc, win) {
     //     var docEl = doc.documentElement,
     //         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
