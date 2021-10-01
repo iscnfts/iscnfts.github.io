@@ -157,7 +157,7 @@
                                           当前轮次 {{item.rounds}}</p>
                         <p class="hoders">当前权益持有者： <span>{{item.holder}}</span></p>
                         <p class="hoders">宝石即将归属者： <span>{{item.winner}}</span></p>
-                        <el-button class="btn" @click="toDoing(item,index)">{{ item.isApproved?'立即抢购':'授权' }}</el-button>
+                        <el-button class="btn" @click="toDoing(item,index)">{{ item.isApproved?'立即抢购':'购买授权' }}</el-button>
                         <p class="prices">我的余额 {{balance}}</p>
                     </div>
                 </li>
@@ -171,7 +171,7 @@
                         <img :src="item.hero">
                         <h3 class="name">{{item.heroName}}({{item.name}})</h3>
                         <p class="price">回购价格  <span>{{item.purchase}} IGC</span></p>
-                        <el-button class="btn" @click="purGems(item,index)">{{item.isAllApproved?'立即回购':'授权'}}</el-button>
+                        <el-button class="btn" @click="purGems(item,index)">{{item.isAllApproved?'立即回购':'购买授权'}}</el-button>
                     </li>
                 </ul>
                 <img class="shoutao" src="./images/InfinityStones-Infographic-01-740x740.jpg">
