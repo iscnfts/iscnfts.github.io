@@ -171,7 +171,7 @@
                         <img :src="item.hero">
                         <h3 class="name">{{item.heroName}}({{item.name}})</h3>
                         <p class="price">回购价格  <span>{{item.purchase}} IGC</span></p>
-                        <el-button class="btn" @click="purGems(item,index)">{{item.isAllApproved?'立即回购':'授权回购'}}</el-button>
+                        <el-button class="btn" @click="purGems(item,index)">{{item.isAllApproved?'立即回购':'授权卖出'}}</el-button>
                     </li>
                 </ul>
                 <img class="shoutao" src="./images/InfinityStones-Infographic-01-740x740.jpg">
