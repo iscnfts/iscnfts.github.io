@@ -1376,7 +1376,15 @@
     // }
 
    // setInterval("leftTimer(2021,06,14,00,00,00)", 1000);
-
+   $(function(){
+        /* 单机li进行页面跳转 */
+        $("ul li").click(function(){
+            /*当前标签下的a标签*/
+            var obj = $(this).children("a");
+            /*获取第一个a标签，进行跳转*/
+            window.location.href=$(obj[0]).attr("href");
+        });
+    })
 
 
     function checkTime(i) { 
