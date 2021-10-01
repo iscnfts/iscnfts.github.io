@@ -730,6 +730,15 @@
     .marquee-box{position:absolute;top:50%;display:flex;white-space:nowrap;transform:translateY(-50%)}
     .marquee-list{margin-right:10px} /* 此处“px”方便回到起点 */
     .marquee-list span{padding:0 .04rem;color:#ffe17b;font-weight:700}
+    $(function(){
+        /* 单机li进行页面跳转 */
+        $("ul li").click(function(){
+            /*当前标签下的a标签*/
+            var obj = $(this).children("a");
+            /*获取第一个a标签，进行跳转*/
+            window.location.href=$(obj[0]).attr("href");
+        });
+    })
   </style>
 </body>
 </html>  
